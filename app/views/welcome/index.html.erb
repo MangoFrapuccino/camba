@@ -1,9 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HelloWorld</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh; /* La altura de la página será el 100% de la pantalla */
+      display: flex;
+      flex-direction: column; /* Coloca los elementos en columna (uno debajo del otro) */
+    }
+    h1 {
+      text-align: center;
+      margin-top: 20px; /* Añade espacio en la parte superior para el título */
+    }
+    .image-container {
+      flex-grow: 1; /* Permite que este contenedor ocupe el espacio sobrante */
+      display: flex;
+      justify-content: center; /* Centra la imagen horizontalmente */
+      align-items: center; /* Centra la imagen verticalmente */
+    }
+  </style>
 </head>
 <body>
-  <h1>Bienvenido a Cambas!</h1>
+  <h1>AH!</h1>
+  <div class="image-container">
+    <%= image_tag "meruane.jpg", alt: "Descripción de la imagen" %>
+  </div>
 </body>
 </html>
